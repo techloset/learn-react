@@ -104,7 +104,6 @@ function Students() {
             let updateStudents = students.map((stu,index) => {
                 if (updatedIndex === index) {
                     return student
-
                 }
             else {
             return stu;
