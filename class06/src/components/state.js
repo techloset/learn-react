@@ -1,4 +1,7 @@
 import { useState } from "react";
+import "./style.css";
+import naveedImage from "../assets/naveedsarwar.jpg";
+
 
 function BasicState() {
     //   var in js 
@@ -29,6 +32,8 @@ function BasicState() {
 
     return (
         <div>
+
+            <img style={{ width: 300 }} src={naveedImage} alt="naveed sfa" />
 
             <h3>List of students name</h3>
             <ul>
