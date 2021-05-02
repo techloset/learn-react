@@ -38,6 +38,9 @@ function App() {
       <Route path="/contact">
         <Contact />
       </Route>
+      <Route path="/users/:id">
+        <Contact />
+      </Route>
       </Switch>
 
      <Footer/>
