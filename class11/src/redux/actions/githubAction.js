@@ -4,7 +4,7 @@ export const fetchFollowers = (data) => async(dispatch, previouState) => {
     try {
         let res = await fetch(`https://api.github.com/users/${data}/followers`);
         console.log("res", res);
-       let follorwer = await res;
+        const follorwer = await res.json();
         dispatch({
             type: GITHUB_FOLLOWER_API,
             payload:follorwer 

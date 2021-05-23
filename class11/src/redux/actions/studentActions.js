@@ -10,27 +10,3 @@ export const addStudent = (data) =>{
 }
 
 
-export const fetchFollowers = (data) => async(dispatch, previouState) => {
-    try {
-        let res = await fetch(`https://api.github.com/users/${data}/followers`);
-        console.log("res", res);
-
-        dispatch({
-            type: GITHUB_FOLLOWER_API,
-            payload: res
-        })
-
-    } catch (error) {
-        console.log("error", error);
-        dispatch({
-            type: ERROR_GITHUB_FOLLOWER_API,
-            payload: error
-        })
-    }
-
-
-
-  
-
-
-}
